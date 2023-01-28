@@ -7,13 +7,13 @@ ASP.NET Core is a new, open-source, and cross-platform framework for building mo
 
 ## What are the benefits of using ASP.NET Core?
 
- 1. Some of the benefits of using ASP.NET Core include:
-2. Cross-platform compatibility
-3. Improved performance
-4. Support for modern development patterns and practices
-5. A more modular architecture
-6. Integration with modern front-end frameworks and tools
-7. Built-in support for cloud deployment
+Some of the benefits of using ASP.NET Core include:
+1.  Cross-platform compatibility
+2.  Improved performance
+3.  Support for modern development patterns and practices
+4. A more modular architecture
+5.  Integration with modern front-end frameworks and tools
+6. Built-in support for cloud deployment
 ## What is the difference between MVC and Razor Pages in ASP.NET Core?
 
 MVC (Model-View-Controller) is a design pattern that separates an application into three components: the Model, which represents the data and business logic, the View, which renders the HTML, and the Controller, which handles user interactions. Razor Pages is a new feature in ASP.NET Core that provides a simpler, more straightforward approach to building web applications. With Razor Pages, you can build an application by creating a hierarchy of Razor Pages, each of which represents a single URL.
