@@ -1,4 +1,4 @@
-# SQL Short Note
+# SQL Short Note 💚🛸
 ```bash
 create table student (
 student_id int ,
