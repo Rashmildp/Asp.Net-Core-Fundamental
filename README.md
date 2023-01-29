@@ -1,5 +1,5 @@
 
-# ASP.NET CORE FUNDAMENTALS
+# ASP.NET CORE FUNDAMENTALS ❤️🔥
 
 ## What is ASP.NET Core, and how is it different from ASP.NET?
 
