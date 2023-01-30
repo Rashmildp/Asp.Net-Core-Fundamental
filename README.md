@@ -247,9 +247,9 @@ Without using async and await
 
 
         }
-      public static void Method()
+      public static async void Method()
         {
-            Task.Run(new Action(LongTask));
+          await  Task.Run(new Action(LongTask)); // wait until long task finsihes
             Console.WriteLine("New Thread");
         }
         public static void LongTask()
@@ -267,10 +267,4 @@ Without using async and await
 
         }
     ```
-        
-        Output
-       ```bash
-       New Thread
-       Main Thread 
-       Long Task completed
-       ```
+   
