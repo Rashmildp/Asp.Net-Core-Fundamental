@@ -177,7 +177,7 @@ Startup class for dependancy inject
             services.AddControllersWithViews();
         }
 ```
-**THREADS**
+## **THREADS**
 ```bash
 using System;
 using System.Threading;
