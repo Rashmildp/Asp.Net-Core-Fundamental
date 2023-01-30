@@ -238,3 +238,38 @@ Async: The async keyword is used to declare a method or a lambda expression as a
 Await: The await keyword is used to wait for the completion of an asynchronous operation. When an asynchronous method is executed and reaches an await keyword, it will pause its execution until the awaited task is completed and then resume where it left off.
 
 **By using async and await, developers can write asynchronous code in a more straightforward and readable way, making it easier to build scalable and high-performance ASP.NET Core applications.**
+Without using async and await 
+     ```bash
+        static void Main(string[] args)
+            Method();
+            Console.WriteLine("Main Thread");
+            Console.ReadLine();
+
+
+        }
+      public static void Method()
+        {
+            Task.Run(new Action(LongTask));
+            Console.WriteLine("New Thread");
+        }
+        public static void LongTask()
+        {
+            Thread.Sleep(20000);
+            Console.WriteLine("Long Task Finshed !");
+        }
+        public static void CountDown(String name)
+        {
+            for(int i = 10; i>  0; i--)
+            {
+                Console.WriteLine("Timer #1 "+i +" Seconds");
+            }
+            Thread.Sleep(1000);
+
+        }
+        ```
+        Output
+       ```bash
+       New Thread
+       Main Thread 
+       Long Task completed
+       ```
