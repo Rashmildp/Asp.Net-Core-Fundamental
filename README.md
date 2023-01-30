@@ -225,4 +225,11 @@ namespace ThreadsExample
    
 }
 ```
+**Async and Await are C# keywords used for asynchronous programming in ASP.NET Core.**
 
+Async: The async keyword is used to declare a method or a lambda expression as asynchronous, which means that the method can be executed _**asynchronously and does not block the execution of the rest of the application.**_
+
+Await: The await keyword is used to wait for the completion of an asynchronous operation. When an asynchronous method is executed and reaches an await keyword, it will pause its execution until the awaited task is completed and then resume where it left off.
+
+**By using async and await, developers can write asynchronous code in a more straightforward and readable way, making it easier to build scalable and high-performance ASP.NET Core applications.
+**
