@@ -251,4 +251,10 @@ If delete branch 2 , all of the rows that have branch id in this table would be 
 **Triggers**
 
 Triggers are basically a block of code which can define a certain action should happen .
+```bash
+craete trigger myTrigger Before insert
+on Employee
+for each row begin
+insert into myTrigger values ("Added new employee");
 
+```
