@@ -177,3 +177,51 @@ Startup class for dependancy inject
             services.AddControllersWithViews();
         }
 ```
+```bash
+using System;
+using System.Threading;
+
+namespace ThreadsExample
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            // Thread is an execution part of the program
+            // We can use multiple threads to perform.
+            // Different tasks of are project at the same time.
+            // Current thread is running main thread.
+            Thread mainThread = Thread.CurrentThread;
+           // mainThread.Name = "Current Thread";
+            //Console.WriteLine(mainThread.Name);
+            Thread thread1 = new Thread(() => CountDown("First Thread"));
+            Thread thread2 = new Thread(()=>CountUp("Second Thread"));
+            thread1.Start();
+            thread2.Start();
+            Console.WriteLine(mainThread.Name+" is completed");
+
+
+        }
+        public static void CountDown(String name)
+        {
+            for(int i = 10; i>  0; i--)
+            {
+                Console.WriteLine("Timer #1 "+i +" Seconds");
+            }
+            Thread.Sleep(1000);
+
+        }
+        public static void CountUp(String name)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Timer #2 " + i + " Seconds");
+            }
+            Thread.Sleep(1000);
+
+        }
+    }
+   
+}
+```
+
