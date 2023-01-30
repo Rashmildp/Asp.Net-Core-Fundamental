@@ -266,7 +266,8 @@ Without using async and await
             Thread.Sleep(1000);
 
         }
-        ```
+    ```
+        
         Output
        ```bash
        New Thread
