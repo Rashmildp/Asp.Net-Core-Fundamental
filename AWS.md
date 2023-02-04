@@ -63,6 +63,10 @@ Features.
 2. Storage volumes for temporary data that's **deleted** when you stop hibernate, or **terminate** your instance, known as instance store volumes.
 
 
+
+
+![Screenshot 2023-02-04 192341](https://user-images.githubusercontent.com/64850016/216772035-18435bf9-ca01-446a-a559-8dd2caa215e1.png)
+
 ### instances
 
 An instance is a virtual server in the cloud. 
