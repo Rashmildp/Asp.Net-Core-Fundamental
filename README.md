@@ -20,7 +20,22 @@ MVC (Model-View-Controller) is a design pattern that separates an application in
 ## What is Middleware in ASP.NET Core?
 
 Middleware is a component that sits between the server and the application in the request/response pipeline. It can modify incoming requests, perform custom logic, and return responses to the client. Middleware is a key feature in ASP.NET Core and allows developers to add custom functionality to their applications without having to modify the underlying code.
+```bash
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    app.Use(async (context, next) =>
+    {
+        await context.Response.WriteAsync("Hello World From 1st Middleware!");
 
+        await next();
+    });
+
+    app.Run(async (context) =>
+    {
+        await context.Response.WriteAsync("Hello World From 2nd Middleware"); 
+    });
+}
+```
 ## What is the role of Startup.cs in an ASP.NET Core application?
 
 Startup.cs is a special class in ASP.NET Core that defines the configuration of the application. 
